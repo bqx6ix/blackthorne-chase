@@ -120,9 +120,10 @@
   }
   .founder-mini .avatar{
     width:52px; height:52px; border-radius:50%;
-    background:linear-gradient(135deg, var(--gold-bright), var(--gold-dim, var(--gold)));
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--serif); font-weight:700; color:#14202B; font-size:18px; flex-shrink:0;
+    overflow:hidden; flex-shrink:0; border:1px solid var(--border);
+  }
+  .founder-mini .avatar img{
+    width:100%; height:100%; object-fit:cover;
   }
   .founder-mini .name{font-family:var(--serif); font-size:16px; font-weight:600;}
   .founder-mini .role{font-size:13px; color:var(--muted); margin-bottom:6px;}
@@ -224,9 +225,12 @@
   .founder-section{display:grid; grid-template-columns:0.9fr 1.4fr; gap:56px; align-items:start;}
   .founder-photo{
     aspect-ratio:4/5; background:var(--surface); border:1px solid var(--border-soft);
-    display:flex; align-items:center; justify-content:center; overflow:hidden;
+    overflow:hidden;
   }
-  .founder-photo .initials{font-family:var(--serif); font-size:72px; color:var(--gold); opacity:0.5;}
+  .founder-photo img{
+    width:100%; height:100%; object-fit:cover; object-position:top center;
+    filter:grayscale(15%);
+  }
   .founder-tags{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 24px;}
   .founder-tags span{font-size:12.5px; border:1px solid var(--border); color:var(--gold); padding:6px 14px; border-radius:16px;}
   .founder-section p{color:var(--muted); margin-bottom:16px; font-size:15.5px;}
@@ -364,7 +368,7 @@
     </div>
 
     <div class="founder-mini">
-      <div class="avatar">BR</div>
+      <div class="avatar"><img src="baqa-rashdi.jpg" alt="Baqa Rashdi, Founder &amp; Managing Director"></div>
       <div>
         <div class="name">Baqa Rashdi — Founder &amp; Managing Director</div>
         <div class="role">Canadian-Qualified Lawyer (Ontario Bar, 2010) · Dubai-Based</div>
@@ -632,7 +636,7 @@
       <h2>Experienced leadership in compliance &amp; corporate advisory</h2>
     </div>
     <div class="founder-section">
-      <div class="founder-photo"><span class="initials">BR</span></div>
+      <div class="founder-photo"><img src="baqa-rashdi.jpg" alt="Baqa Rashdi, Founder &amp; Managing Director, Blackthorne &amp; Chase"></div>
       <div>
         <p>Baqa Rashdi is the Founder and Managing Director of Blackthorne &amp; Chase, a Dubai-based management consultancy specializing in corporate compliance, governance systems, and regulatory risk management for UAE businesses.</p>
         <div class="founder-tags">
